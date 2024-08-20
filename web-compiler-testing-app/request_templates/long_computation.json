@@ -1,0 +1,3 @@
+{
+    "file": "#include <iostream>\nusing namespace std;\n\nint main() {\n    const int size = 5;\n    \n    int array1[size] = {1, 2, 3, 4, 5};\n    int array2[size] = {6, 7, 8, 9, 10};\n    \n    int result[size];\n    \n    for(int i = 0; i < size; i++) {\n        result[i] = array1[i] + array2[i];\n    }\n    \n    cout << \"Wynik dodawania dwóch tablic:\\n\";\n    for(int i = 0; i < size; i++) {\n        cout << result[i] << \" \";\n    }\n    cout << endl;\n    \n    return 0;\n}\n"
+}
