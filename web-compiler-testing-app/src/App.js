@@ -34,7 +34,7 @@ function App() {
       setResponseLogs([`Unexpected error: ${error.message}`]);
     } finally {
       const endTime = Date.now();
-      setExecutionTime(endTime - startTime);
+      setExecutionTime(((endTime - startTime) / 1000).toFixed(5));
       setLoading(false);
     }
   };
@@ -138,7 +138,7 @@ function App() {
         {executionTime !== null && (
           <div style={{ marginTop: '20px' }}>
             <h2>Execution Time:</h2>
-            <p>{executionTime} ms</p>
+            <p>{executionTime} s</p>
           </div>
         )}
       </div>
